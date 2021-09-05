@@ -200,7 +200,7 @@ border-color: var(--tertiary-color);
     height: 20%;
 }
 
-.container {
+.aboutmecontainer {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -231,6 +231,53 @@ border-color: var(--tertiary-color);
     justify-content: flex-start;
     background-color: #000847;
 }
+
+.skills h2 {
+    margin-top: 35px;
+}
+
+.skillcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.skillcontainer div {
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background-color: #ffffff3b;
+}
+
+.skillcontainer div h3 {
+    color: var(--primary-color);
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    background-color: #ffffff3b;
+}
+
+.skillcontainer div ul {
+    width: 100%;
+}
+
+.listskill li{
+    width: 100%;
+    color: var(--primary-color);
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
 /* SKILLS END */
 
 /* CREDENTIALS STYLES */
