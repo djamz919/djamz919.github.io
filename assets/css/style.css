@@ -258,7 +258,7 @@ border-color: var(--tertiary-color);
 }
 
 .firstproject {
-    width: 50%;
+    width: 60%;
     padding: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -298,7 +298,7 @@ border-color: var(--tertiary-color);
 }
 
 .otherprojects {
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -537,6 +537,11 @@ border-color: var(--tertiary-color);
     
     header nav ul li a {
         font-size: 16px;
+    }
+
+    .hero{
+        padding-right: 30px;
+        padding-left: 30px;
     }
   
     .hero h2 {
