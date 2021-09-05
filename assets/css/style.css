@@ -199,6 +199,10 @@ border-color: var(--tertiary-color);
     background-color: var(--secondary-color);
 }
 
+.aboutme h2 {
+    margin-top: 35px;
+}
+
 .aboutme img {
     width: 20%;
     height: 20%;
@@ -239,6 +243,7 @@ border-color: var(--tertiary-color);
 .projects h2 {
     margin-top: 35px;
 }
+
 .projectcontainer {
     display: flex;
     justify-content: space-evenly;
@@ -415,3 +420,70 @@ border-color: var(--tertiary-color);
 }
 
 /* SKILLS END */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 20px;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 20px;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .aboutmecontainer {
+        width: 100%;
+    }
+
+    .aboutme img {
+        display: none;
+    }
+    
+    .firstproject{
+        width: 100%;
+    }
+}
