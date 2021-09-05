@@ -102,6 +102,8 @@ header nav ul li a:hover {
     border-top-width: 1px;
     border-bottom-width: 1px;
     padding: 10px 30px;
+    width: 100%;
+    text-align: center;
 }
 /*HERO STYLES END */
 
@@ -217,8 +219,10 @@ border-color: var(--tertiary-color);
 .text {
     justify-content: flex-start;
     margin-left: 35px;
+    margin-right: 35px;
     margin-top: 20px;
     width: 100%;
+
 }
 
 .text p {
@@ -422,7 +426,7 @@ border-color: var(--tertiary-color);
 /* SKILLS END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1800px) {
     header {
       padding-bottom: 20px;
       justify-content: center;
@@ -433,32 +437,13 @@ border-color: var(--tertiary-color);
       width: 100%;
       text-align: center;
     }
-  
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    header nav ul li a {
-      font-size: 20px;
-    }
 
-    .hero h2 {
+    .section-title {
         font-size: 20px;
     }
-}
 
-@media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 20px;
-      justify-content: center;
-      position: relative;
-    }
-  
-    header h1 {
-      width: 100%;
-      text-align: center;
+    .text p{
+        font-size: 16px;
     }
   
     header nav ul {
@@ -468,21 +453,14 @@ border-color: var(--tertiary-color);
     }
   
     header nav ul li a {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .hero h2 {
-        font-size: 20px;
-    }
-
-    .aboutmecontainer {
+        font-size: 16px;
         width: 100%;
+        text-align: center;
     }
-
-    .aboutme img {
-        display: none;
-    }
-    
     .firstproject{
         width: 100%;
     }
@@ -498,4 +476,38 @@ border-color: var(--tertiary-color);
     .small-project{
         width: 47.5%;
     }
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/*
+@media screen and (max-width: 1440px) {
+    header {
+      padding-bottom: 20px;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .aboutme img {
+        display: none;
+    }
+    
 }
