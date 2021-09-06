@@ -300,7 +300,7 @@ footer {
     transition: 0.5s;
 }
 
-.runbuddy:link, .runbuddy:visited {
+.runbuddy:link, .runbuddy:visited, .other-projects:link, .other-projects:visited {
     text-decoration: none;
 }
 
