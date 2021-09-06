@@ -104,6 +104,7 @@ header nav ul li a:hover {
     padding: 10px 0px;
     width: 100%;
     text-align: center;
+    letter-spacing: .225em;
 }
 /*HERO STYLES END */
 
@@ -130,17 +131,7 @@ footer {
     padding: 0px 20px;
 }
 
-.media ul li a:link{
-    color: white;
-    text-decoration: none;
-}
-
-.media ul li a:visited{
-    color: white;
-    text-decoration: none;
-}
-
-.media ul li a:active{
+.media ul li a:link, .media ul li a:visited, .media ul li a:active{
     color: white;
     text-decoration: none;
 }
@@ -180,7 +171,8 @@ footer {
     margin-right: 35px;
     width: 100%;
     align-self: flex-end;
-  }
+    letter-spacing: .1em;
+}
   
 .primary-border {
     border-color: var(--primary-color);
@@ -257,44 +249,58 @@ border-color: var(--tertiary-color);
     margin-right: 35px;
 }
 
-.firstproject {
+.runbuddy {
     width: 60%;
-    padding: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
     border-radius: 20px;
     border: 3px solid white;
     background-image: url('../images/runbuddy.PNG');
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+
+.firstproject {
+    width: 100%;
+    display: flex;
 }
 
 .firstproject span {
     opacity: 0;
-    margin-top: auto;
     color: white;
     background-color: rgba(0, 0, 0, 0.61);
     width: 100%;
-    height: 100%;
-    padding: 290px 5px;
     border-radius: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.firstproject span h3, .small-project span h3 {
+.firstproject h3 {
     font-size: 30px;
     font-weight: bolder;
     padding-bottom: 5px;
 }
 
-.firstproject:hover, .small-project:hover{
-    transform: scale(1.03);
+.firstproject span:hover, .otherprojects span:hover {
+    opacity: 1;
+}
+
+.runbuddy:hover {
+    transform: scale(1.02);
     transition: 0.5s;
 }
 
-.firstproject span:hover, .otherprojects span:hover {
-    opacity: 1;
+.small-project:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.runbuddy:link, .runbuddy:visited {
+    text-decoration: none;
 }
 
 .otherprojects {
@@ -426,23 +432,58 @@ border-color: var(--tertiary-color);
 /* SKILLS END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1440px) {
     .section-title {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .text p{
         font-size: 20px;
     }
 
+    .text{
+        padding-bottom: 15px;
+    }
+
+    .aboutme img {
+        width: 46%;
+    }
+
+    .aboutmecontainer {
+        width: 54%;
+    }
+  
     .hero h2 {
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
         text-align: center;
     }
 
-    .firstproject{
+    .firstproject span {
+        padding: 170px 0;
+    }
+
+    .small-project span{
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .text p {
+        font-size: 16px;
+    }
+
+    .runbuddy{
         width: 100%;
+        padding: auto;
+    }
+
+    .small-project {
+        margin-top: 0;
+    }
+  
+    .other-projects{
+        width: 47.5%;
     }
 
     .otherprojects{
@@ -452,14 +493,14 @@ border-color: var(--tertiary-color);
         justify-content: space-between;
         width: 100%;
     }
-
-    .small-project{
-        width: 47.5%;
-    }
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 980px) {
+    .section-title {
+        text-align: center;
+    }
+
     header {
         padding-bottom: 20px;
         justify-content: center;
@@ -469,54 +510,8 @@ border-color: var(--tertiary-color);
     header h1 {
         width: 100%;
         text-align: center;
-        padding-bottom: 15px;
-    }
-  
-    .section-title {
-        font-size: 26px;
     }
 
-    .text p{
-        font-size: 16px;
-    }
-
-    .text{
-        padding-bottom: 15px;
-    }
-
-    .aboutme img {
-        width: 37%;
-    }
-
-    .aboutmecontainer {
-        width: 63%;
-    }
-  
-    .hero h2 {
-        font-size: 18px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .firstproject{
-        width: 100%;
-    }
-  
-    .otherprojects{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-  
-    .small-project{
-        width: 47.5%;
-    }
-}
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
     .section-title {
         font-size: 26px;
     }
@@ -558,30 +553,6 @@ border-color: var(--tertiary-color);
         width: 100%;
     }
 
-    .firstproject{
-        width: 100%;
-    }
-
-    .firstproject span{
-        padding: 180px 5px;
-    }
-  
-    .otherprojects{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .small-project span{
-        padding: 100px 5px;
-    }
-  
-    .small-project{
-        width: 47.5%;
-    }
-
     .skillcontainer{
         display: flex;
         flex-direction: column;
@@ -602,10 +573,30 @@ border-color: var(--tertiary-color);
         width: 100%;
     }
 
+    .firstproject span {
+        padding: 130px 0;
+    }
+
+    .small-project span{
+        padding: 60px 0;
+    }
     
+    .small-project span h3{
+        font-size: 18px;
+    }
+
+    .small-project span p{
+        font-size: 12px;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    .firstproject span {
+        padding: 100px 0;
+    }
 
+    .small-project span{
+        padding: 50px 0;
+    }
 }
