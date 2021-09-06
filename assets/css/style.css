@@ -703,11 +703,11 @@ border-color: var(--tertiary-color);
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    .firstproject span {
-        padding: 100px 0;
+    header nav ul li a{
+        font-size: 8px;
     }
 
-    .small-project span{
-        padding: 50px 0;
+    .date{
+        font-size: 10px;
     }
 }
