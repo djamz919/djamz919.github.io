@@ -8,4 +8,4 @@ The homepage can be viewed via Github pages using the following link: [Daryll Mu
 
 The site accomodates different screen sizes and can be also be viewed on smaller screens such as tablets and mobile phones.
 
-![Screenshot of Digital Resume](assets/images/digital-resume-screenshot.jpg)
+![Screenshot of Digital Resume](assets/images/digital-resume-screenshot.png)
