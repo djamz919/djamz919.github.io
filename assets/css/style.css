@@ -378,8 +378,14 @@ border-color: var(--tertiary-color);
     justify-content: space-evenly;
 }
 
-.education, .certifications {
-    width: 45%;
+.education {
+    width: 42%;
+    margin: 20px 0;
+    background-color: #ffffff3b;
+}
+
+.certifications {
+    width: 54%;
     margin: 20px 0;
     background-color: #ffffff3b;
 }
@@ -415,6 +421,10 @@ border-color: var(--tertiary-color);
     width: 80%;
     padding-left: 25px;
     color: white;
+}
+
+.subcontent {
+    font-style: italic;
 }
 
 .date {
@@ -539,6 +549,14 @@ border-color: var(--tertiary-color);
     .small-project span{
         padding: 80px 0;
     }
+
+    .credentials-content{
+        flex-direction: column;
+    }
+
+    .education, .certifications {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1160px) {
@@ -659,6 +677,26 @@ border-color: var(--tertiary-color);
     }
 
     .small-project span p{
+        font-size: 12px;
+    }
+
+    .education h3, .certifications h3 {
+        font-size: 20px;
+    }
+
+    .education div h4, .certifications a div h4 {
+        font-size: 16px;
+    }
+
+    .date, .subcontent {
+        font-size: 12px;
+    }
+
+    .skillcontainer div h3 {
+        font-size: 18px;
+    }
+
+    .listskill li {
         font-size: 12px;
     }
 }
