@@ -7,3 +7,5 @@ This repository hosts my personal website which displays my digital resume and p
 The homepage can be viewed via Github pages using the following link: [Daryll Munoz](https://djamz919.github.io/)
 
 The site accomodates different screen sizes and can be also be viewed on smaller screens such as tablets and mobile phones.
+
+![Screenshot of Digital Resume](assets/images/digital-resume-screenshot.jpg)
