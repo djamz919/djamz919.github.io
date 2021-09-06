@@ -652,6 +652,11 @@ footer {
         width: 100%;
     }
 
+    
+    .firstproject span, .otherprojects span {
+        opacity: 1;
+    }
+
     .skillcontainer{
         display: flex;
         flex-direction: column;
