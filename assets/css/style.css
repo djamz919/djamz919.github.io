@@ -81,7 +81,7 @@ header nav ul li a:hover {
 
 /* HERO STYLES START */
 .hero {
-    background-image: url('../images/Hong_Kong_background.jpg');
+    background-image: url('../images/Hong_Kong_background.png');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -90,9 +90,9 @@ header nav ul li a:hover {
     background-attachment: fixed;
     background-position: 0 40px;
     background-size: 100%;
-    padding: 230px;
+    padding: 260px 230px;
     background-repeat: no-repeat;
-    background-color: rgb(22, 22, 22);
+    background-color: #1a1b27;
 }
 
 .hero h2 {
@@ -634,7 +634,8 @@ footer {
 
     .hero{
         padding: 120px 30px;
-        background-position: 0 130px;
+        background-position: 0 0;
+        background-attachment: scroll;
     }
   
     .hero h2 {
@@ -716,7 +717,6 @@ footer {
 @media screen and (max-width: 575px) {
     .hero {
         padding: 60px 30px;
-        background-position: 0 150px;
     }
 
     .hero h2 {
