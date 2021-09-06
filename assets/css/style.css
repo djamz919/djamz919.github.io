@@ -87,9 +87,12 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-attachment: scroll;
-    background-position: 100%;
+    background-attachment: fixed;
+    background-position: 0 40px;
+    background-size: 100%;
     padding: 230px;
+    background-repeat: no-repeat;
+    background-color: rgb(22, 22, 22);
 }
 
 .hero h2 {
@@ -169,6 +172,7 @@ footer {
     text-align: left;
     margin-left: 35px;
     margin-right: 35px;
+    margin-top: 35px;
     width: 100%;
     align-self: flex-end;
     letter-spacing: .1em;
@@ -192,10 +196,6 @@ footer {
     flex: auto;
     flex-wrap: wrap;
     background-color: var(--secondary-color);
-}
-
-.aboutme h2 {
-    margin-top: 35px;
 }
 
 .aboutme img {
@@ -235,10 +235,6 @@ footer {
     flex-wrap: wrap;
     justify-content: flex-start;
     background-color: #000847;
-}
-
-.projects h2 {
-    margin-top: 35px;
 }
 
 .projectcontainer {
@@ -366,10 +362,6 @@ footer {
     background-color: #00023b;
 }
 
-.credentials h2 {
-    margin-top: 35px;
-}
-
 .credentials-content {
     padding-left: 35px;
     padding-right: 35px;
@@ -461,10 +453,6 @@ footer {
     background-color: #000120;
 }
 
-.skills h2 {
-    margin-top: 35px;
-}
-
 .skillcontainer {
     display: flex;
     justify-content: space-evenly;
@@ -543,6 +531,11 @@ footer {
     .aboutmecontainer {
         width: 54%;
     }
+
+    .hero {
+        background-position: 0 70px;
+        padding: 200px;
+    }
   
     .hero h2 {
         font-size: 18px;
@@ -592,12 +585,18 @@ footer {
         justify-content: space-between;
         width: 100%;
     }
+
+    .hero{
+        margin-top: auto;
+        padding: 140px;
+    }
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     .section-title {
         text-align: center;
+        margin-top: 20px;
     }
 
     header {
@@ -634,8 +633,8 @@ footer {
     }
 
     .hero{
-        padding-right: 30px;
-        padding-left: 30px;
+        padding: 120px 30px;
+        background-position: 0 130px;
     }
   
     .hero h2 {
@@ -652,7 +651,6 @@ footer {
         width: 100%;
     }
 
-    
     .firstproject span, .otherprojects span {
         opacity: 1;
     }
@@ -671,6 +669,10 @@ footer {
 @media screen and (max-width: 768px) {
     .aboutme img{
         display: none;
+    }
+
+    .hero {
+        padding: 100px 30px;
     }
 
     .aboutmecontainer{
@@ -712,6 +714,15 @@ footer {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    .hero {
+        padding: 60px 30px;
+        background-position: 0 150px;
+    }
+
+    .hero h2 {
+        font-size: 14px;
+    }
+
     .section-title {
         padding-bottom: 10px;
     }
