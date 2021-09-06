@@ -668,10 +668,6 @@ border-color: var(--tertiary-color);
         padding: 130px 0;
     }
 
-    .small-project span{
-        padding: 60px 0;
-    }
-    
     .small-project span h3{
         font-size: 18px;
     }
@@ -703,11 +699,24 @@ border-color: var(--tertiary-color);
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    header nav ul li a{
+    .small-project span h3 {
+        font-size: 12px;
+    }
+
+    .small-project span p {
         font-size: 8px;
+    }
+
+    .education div h4, .certifications a div h4, .subcontent {
+        padding-left: 10px;
+    }
+
+    header nav ul li a{
+        font-size: 16px;
     }
 
     .date{
         font-size: 10px;
+        padding-right: 10px;
     }
 }
