@@ -486,7 +486,7 @@ footer {
 .skillcontainer div h3 {
     color: var(--primary-color);
     width: 100%;
-    border-radius: 12px;
+    border-radius: 12px 12px 0 0;
     font-size: 26px;
     text-align: center;
     padding: 15px 0;
